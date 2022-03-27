@@ -20,8 +20,11 @@ function DetailSection() {
         دستی بندی
       </div>
       <div className="mt-[20px] w-full flex flex-wrap justify-center gap-[10px]">
-        {images.map((item) => (
-          <div className="relative w-[300px] h-[200px] rounded-xl  overflow-hidden flex justify-end items-end cursor-pointer">
+        {images.map((item, index) => (
+          <div
+            key={index}
+            className="relative w-[300px] h-[200px] rounded-xl  overflow-hidden flex justify-end items-end cursor-pointer"
+          >
             <div className="absolute w-2/3 h-[30px] bg-white rounded-br-lg border rounded-tl-xl text-[12px] flex justify-center items-center z-10">
               {item.lable}
             </div>

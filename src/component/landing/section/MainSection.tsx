@@ -28,8 +28,11 @@ function MainSection() {
           showThumbs={false}
           infiniteLoop
         >
-          {images.map((item) => (
-            <div className="relative w-full md:h-[400px] h-[300px] bg-red-400">
+          {images.map((item, index) => (
+            <div
+              key={index}
+              className="relative w-full md:h-[400px] h-[300px] bg-red-400"
+            >
               <img
                 src={item.url}
                 className=" w-full md:h-[400px] h-[300px] rounded-xl -z-10"

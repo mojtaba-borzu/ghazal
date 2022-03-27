@@ -1,6 +1,7 @@
 //libraries
 import React from "react";
 import DetailSection from "./section/DetailSection";
+import Footer from "./section/Footer";
 
 //component
 import HeroBox from "./section/HeroBox";
@@ -32,6 +33,11 @@ function Landing() {
       <div className="container mx-auto  w-full lg:px-[100px] ">
         <div className="w-full">
           <VideoSection />
+        </div>
+      </div>
+      <div className="container mx-auto  w-full lg:px-[100px] ">
+        <div className="w-full">
+          <Footer />
         </div>
       </div>
     </div>

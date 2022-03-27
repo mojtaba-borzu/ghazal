@@ -47,8 +47,10 @@ function HeroBox() {
           <div className="relative mt-[100px] w-full h-[120px] bg-gray-300  rounded-xl flex justify-between items-center">
             <div className="absolute w-full h-full rounded-xl blur-sm"></div>
             <Marquee speed={10} gradient={false} direction="right">
-              {images.map((item: any) => (
-                <ImageSliderMobile images={item} />
+              {images.map((item: any, index) => (
+                <React.Fragment key={index}>
+                  <ImageSliderMobile images={item} />
+                </React.Fragment>
               ))}
             </Marquee>
           </div>

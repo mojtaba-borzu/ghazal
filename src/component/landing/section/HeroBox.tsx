@@ -5,13 +5,12 @@ import Marquee from "react-fast-marquee";
 import ImageSlider from "./ImageSlider";
 
 const images = [
-  { id: 0, url: "images/m1.jpg" },
-  { id: 1, url: "images/m2.jpg" },
-  { id: 2, url: "images/m3.jpg" },
-  { id: 3, url: "images/m4.jpg" },
-  { id: 4, url: "images/m5.jpg" },
-  { id: 5, url: "images/m6.jpg" },
-  { id: 6, url: "images/m7.jpg" },
+  { id: 0, lable: "سبزی خوردن", url: "images/m1.jpg" },
+  { id: 1, lable: "سبزی قرمه", url: "images/m2.jpg" },
+  { id: 2, lable: "سبزی آش", url: "images/m3.jpg" },
+  { id: 3, lable: "سبزی پلو", url: "images/m4.jpg" },
+  { id: 4, lable: "رب", url: "images/m5.jpg" },
+  { id: 5, lable: "ترشی", url: "images/m6.jpg" },
 ];
 
 function HeroBox() {
@@ -43,8 +42,10 @@ function HeroBox() {
         <div className="relative mt-[100px] w-1/2 h-[150px] bg-gray-300  rounded-xl flex justify-between items-center">
           <div className="absolute w-full h-full rounded-xl blur-sm"></div>
           <Marquee speed={10} gradient={false} direction="right">
-            {images.map((item: any) => (
-              <ImageSlider images={item} />
+            {images.map((item: any, index) => (
+              <React.Fragment key={index}>
+                <ImageSlider images={item} />
+              </React.Fragment>
             ))}
           </Marquee>
         </div>
