@@ -5,7 +5,7 @@ function VideoSection() {
     <div className="mt-[50px] w-full flex flex-col items-center bg-gray-100 rounded-[100px] pb-[50px] px-[50px]">
       <div
         dir="rtl"
-        className="mt-[50px] px-[50px] w-full text-[20px] font-medium"
+        className="mt-[50px] px-[50px] w-full text-[20px] font-medium text-center sm:text-right"
       >
         طرز تهیه محصولات
       </div>

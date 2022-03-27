@@ -15,9 +15,9 @@ function DetailSection() {
     <div className="mt-[50px] w-full flex flex-col items-center bg-gray-100 rounded-[100px] pb-[50px] px-[50px]">
       <div
         dir="rtl"
-        className="mt-[50px] px-[50px] w-full text-[20px] font-medium"
+        className="mt-[50px] px-[50px] w-full text-[20px] font-medium sm:text-right text-center"
       >
-        دستی بندی
+        دسته بندی
       </div>
       <div className="mt-[20px] w-full flex flex-wrap justify-center gap-[10px]">
         {images.map((item, index) => (
